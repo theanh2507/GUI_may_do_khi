@@ -1,0 +1,75 @@
+# ninja log v6
+13	159	7923095134250986	test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+13	159	7923095134250986	test4_autogen/timestamp	1ac6a997c2bddddb
+160	4528	7923095135719907	CMakeFiles/test4.dir/mainwindow.cpp.obj	a0f32eca68f7b46
+13	159	7923095134250986	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/timestamp	1ac6a997c2bddddb
+13	159	7923095134250986	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+857	4655	7923094621641672	CMakeFiles/test4.dir/test4_autogen/mocs_compilation.cpp.obj	38f97359044e63a3
+860	4640	7923094621671775	CMakeFiles/test4.dir/main.cpp.obj	4d33ed2231c5c13e
+4528	4831	7923095179350336	test4.exe	398785904f12a217
+21	164	7923095461916395	test4_autogen/timestamp	1ac6a997c2bddddb
+21	164	7923095461916395	test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+21	164	7923095461916395	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/timestamp	1ac6a997c2bddddb
+21	164	7923095461916395	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+165	4340	7923095463356480	CMakeFiles/test4.dir/mainwindow.cpp.obj	a0f32eca68f7b46
+4340	4640	7923095505116071	test4.exe	398785904f12a217
+36	186	7923117135010437	test4_autogen/timestamp	1ac6a997c2bddddb
+36	186	7923117135010437	test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+36	186	7923117135010437	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/timestamp	1ac6a997c2bddddb
+36	186	7923117135010437	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+43	189	7923117371788765	test4_autogen/timestamp	1ac6a997c2bddddb
+43	189	7923117371788765	test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+43	189	7923117371788765	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/timestamp	1ac6a997c2bddddb
+43	189	7923117371788765	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+190	4584	7923117373294162	CMakeFiles/test4.dir/mainwindow.cpp.obj	a0f32eca68f7b46
+4584	4874	7923117417228770	test4.exe	398785904f12a217
+30	170	7923117553447722	test4_autogen/timestamp	1ac6a997c2bddddb
+30	170	7923117553447722	test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+30	170	7923117553447722	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/timestamp	1ac6a997c2bddddb
+30	170	7923117553447722	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+171	4246	7923117554947726	CMakeFiles/test4.dir/mainwindow.cpp.obj	a0f32eca68f7b46
+4247	4556	7923117595676062	test4.exe	398785904f12a217
+13	826	7923142313020430	test4_autogen/timestamp	1ac6a997c2bddddb
+13	826	7923142313020430	test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+13	826	7923142313020430	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/timestamp	1ac6a997c2bddddb
+13	826	7923142313020430	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+827	4618	7923142313779521	CMakeFiles/test4.dir/test4_autogen/mocs_compilation.cpp.obj	38f97359044e63a3
+830	4628	7923142313820370	CMakeFiles/test4.dir/main.cpp.obj	4d33ed2231c5c13e
+28	176	7923142656549708	test4_autogen/timestamp	1ac6a997c2bddddb
+28	176	7923142656549708	test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+28	176	7923142656549708	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/timestamp	1ac6a997c2bddddb
+28	176	7923142656549708	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+34	180	7923143112503264	test4_autogen/timestamp	1ac6a997c2bddddb
+34	180	7923143112503264	test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+34	180	7923143112503264	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/timestamp	1ac6a997c2bddddb
+34	180	7923143112503264	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+181	4582	7923143113969177	CMakeFiles/test4.dir/mainwindow.cpp.obj	a0f32eca68f7b46
+31	180	7923144328913081	test4_autogen/timestamp	1ac6a997c2bddddb
+31	180	7923144328913081	test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+31	180	7923144328913081	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/timestamp	1ac6a997c2bddddb
+31	180	7923144328913081	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+181	4347	7923144330402415	CMakeFiles/test4.dir/mainwindow.cpp.obj	a0f32eca68f7b46
+33	177	7923145273362836	test4_autogen/timestamp	1ac6a997c2bddddb
+33	177	7923145273362836	test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+33	177	7923145273362836	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/timestamp	1ac6a997c2bddddb
+33	177	7923145273362836	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+178	4536	7923145274786798	CMakeFiles/test4.dir/mainwindow.cpp.obj	a0f32eca68f7b46
+4536	4823	7923145318363941	test4.exe	398785904f12a217
+13	167	7923145946416940	test4_autogen/timestamp	1ac6a997c2bddddb
+13	167	7923145946416940	test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+13	167	7923145946416940	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/timestamp	1ac6a997c2bddddb
+13	167	7923145946416940	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+168	4628	7923145947968359	CMakeFiles/test4.dir/mainwindow.cpp.obj	a0f32eca68f7b46
+4628	4944	7923145992568828	test4.exe	398785904f12a217
+12	216	7923146522146613	test4_autogen/timestamp	1ac6a997c2bddddb
+12	216	7923146522146613	test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+12	216	7923146522146613	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/timestamp	1ac6a997c2bddddb
+12	216	7923146522146613	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+216	4280	7923146524206743	CMakeFiles/test4.dir/mainwindow.cpp.obj	a0f32eca68f7b46
+4280	4565	7923146564841759	test4.exe	398785904f12a217
+12	154	7923148397079185	test4_autogen/timestamp	1ac6a997c2bddddb
+12	154	7923148397079185	test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+12	154	7923148397079185	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/timestamp	1ac6a997c2bddddb
+12	154	7923148397079185	E:/giao dien/test4/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/test4_autogen/mocs_compilation.cpp	1ac6a997c2bddddb
+155	4393	7923148398498784	CMakeFiles/test4.dir/mainwindow.cpp.obj	a0f32eca68f7b46
+4393	4688	7923148440891516	test4.exe	398785904f12a217
