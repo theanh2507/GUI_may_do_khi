@@ -385,17 +385,81 @@ HWND MainWindow::FindChildWindow(HWND hwndParent, LPCWSTR className)
             hwndchild = ::FindWindowExW(hwndParent, hwndchild, NULL, NULL);
 
         }
-        // if(hwndchild == className)
-        // {
-        //     hwndchild = className;
-        //     return hwndchild;
-        // }
         return NULL;
     }
 }
 
+
+// Giả sử pElement là ô TextBox bạn đã tìm thấy bằng Accessibility Insights
+QString getTextUsingValuePattern(IUIAutomationElement* pElement) {
+    if (!pElement) return "";
+
+    IUIAutomationValuePattern* pValuePattern = NULL;
+    // Hỏi phần tử này: "Bạn có hỗ trợ ValuePattern không?"
+    HRESULT hr = pElement->GetCurrentPattern(UIA_ValuePatternId, (IUnknown**)&pValuePattern);
+
+    if (SUCCEEDED(hr) && pValuePattern) {
+        BSTR bstrValue;
+        // Lấy giá trị tương đương WM_GETTEXT
+        hr = pValuePattern->get_CurrentValue(&bstrValue);
+
+        if (SUCCEEDED(hr)) {
+            QString result = QString::fromWCharArray(bstrValue);
+            SysFreeString(bstrValue);
+            pValuePattern->Release();
+            return result;
+        }
+        pValuePattern->Release();
+    }
+    return "Không hỗ trợ ValuePattern";
+}
+
 void MainWindow:: getNotepadText() {
-    HWND hwndNotepad = ::FindWindowW(L"Notepad", NULL);         // HWND: tim handle
+    // HWND hwndNotepad = ::FindWindowW(L"Notepad", NULL);         // HWND: tim handle
+
+    HWND hwndNotepad = ::FindWindowW(NULL, L"Kiểm tra RFID UF2");
+    qDebug()<<"hwndNotepad: "<<hwndNotepad;
+
+    // khoi tao UIA
+    IUIAutomation* pAutomation = NULL;
+    CoCreateInstance(CLSID_CUIAutomation, NULL, CLSCTX_INPROC_SERVER, IID_IUIAutomation, (void**)&pAutomation);
+
+    IUIAutomationElement* pRoot = NULL;
+    pAutomation->ElementFromHandle(hwndNotepad, &pRoot);
+
+    // 4. Tìm ô TextBox bằng AutomationId
+    VARIANT var;
+    var.vt = VT_BSTR;
+    var.bstrVal = SysAllocString(L"txbPort");
+
+    IUIAutomationCondition* pCondition;
+    pAutomation->CreatePropertyCondition(UIA_AutomationIdPropertyId, var, &pCondition);
+
+    IUIAutomationElement* pEdit = NULL;
+    pRoot->FindFirst(TreeScope_Descendants, pCondition, &pEdit);
+
+    if (pEdit) {
+        // 5. Thử dùng ValuePattern trước
+        QString data = getTextUsingValuePattern(pEdit);
+        qDebug() << "Du lieu RFID:" << data;
+        pEdit->Release();
+    }
+
+    // Giải phóng
+    pRoot->Release();
+    pAutomation->Release();
+    VariantClear(&var);
+
+    // HWND hwndChild = ::FindWindowExW(hwndNotepad, NULL, NULL, NULL);
+
+    // HWND hwndChild = ::FindWindowW(L"HwndWrapper[Test_RFID_UF2.exe;;03da3055-e0d5-4d48-a0fe-cef8e425e39f]", NULL);
+    // qDebug()<<"hwndChild: "<<hwndChild;
+    // while(hwndChild)
+    // {
+    //     qDebug()<<"hwndChild: "<<hwndChild;
+    //     hwndChild = ::FindWindowExW(hwndNotepad, hwndChild, NULL, NULL);
+    // }
+
 
     // if (hwndNotepad) {
     //     HWND hContainer = ::FindWindowExW(hwndNotepad, NULL, L"NotepadTextBox", NULL);
@@ -405,22 +469,22 @@ void MainWindow:: getNotepadText() {
     //         }
     //     }
 
-    HWND hContainer = FindChildWindow(hwndNotepad, L"RichEditD2DPT");
+    // HWND hContainer = FindChildWindow(hwndNotepad, L"RichEditD2DPT");
 
-        qDebug()<<"hContainer: "<<hContainer;
+    // HWND hContainer = FindChildWindow(hwndNotepad, L"HwndWrapper[Test_RFID_UF2.exe;;a5a08f39-1607-4f2f-8db4-a5726417f09b]");
+    //     qDebug()<<"hContainer: "<<hContainer;
 
-        if (hContainer) {
+    //     if (hContainer) {
+    //         int len = ::SendMessage(hContainer, WM_GETTEXTLENGTH, 0, 0);                    // gui yeu cau lay do dai van ban
+    //         if (len > 0) {
+    //             wchar_t *buffer = new wchar_t[len + 1];
+    //             ::SendMessage(hContainer, WM_GETTEXT, (WPARAM)len + 1, (LPARAM)buffer);     // copy du lieu sang buffer dung WM_GETTEXT
 
-            int len = ::SendMessage(hContainer, WM_GETTEXTLENGTH, 0, 0);                    // gui yeu cau lay do dai van ban
-            if (len > 0) {
-                wchar_t *buffer = new wchar_t[len + 1];
-                ::SendMessage(hContainer, WM_GETTEXT, (WPARAM)len + 1, (LPARAM)buffer);     // copy du lieu sang buffer dung WM_GETTEXT
-
-                QString finalStr = QString::fromWCharArray(buffer);
-                ui->data_serial->setText(finalStr);
-                delete[] buffer;
-            }
-        }
+    //             QString finalStr = QString::fromWCharArray(buffer);
+    //             ui->data_serial->setText(finalStr);
+    //             delete[] buffer;
+    //         }
+    //     }
     }
 
 

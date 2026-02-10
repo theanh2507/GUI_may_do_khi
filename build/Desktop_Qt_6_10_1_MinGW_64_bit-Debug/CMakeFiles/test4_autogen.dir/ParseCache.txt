@@ -609,6 +609,7 @@ E:/giao dien/test4/mainwindow.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/objidl.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/objidlbase.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ole2.h
+ mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/oleacc.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/oleauto.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/oleidl.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/playsoundapi.h
@@ -678,6 +679,10 @@ E:/giao dien/test4/mainwindow.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/timeapi.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/timezoneapi.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/tvout.h
+ mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/uiautomation.h
+ mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/uiautomationclient.h
+ mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/uiautomationcore.h
+ mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/uiautomationcoreapi.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/unknwn.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/unknwnbase.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/urlmon.h

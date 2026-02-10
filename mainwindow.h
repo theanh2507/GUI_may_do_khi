@@ -15,7 +15,8 @@
 #include <QKeyEvent>
 
 #include <windows.h>
-#include <winuser.h>
+#include <uiautomation.h>
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
